@@ -1,0 +1,675 @@
+@font-face {
+  font-family: 'Source Serif Pro';
+  src: local("SourceSerifPro-Regular");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/SourceSerifPro-Regular.eot");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/SourceSerifPro-Regular.otf") format("opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/SourceSerifPro-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: 'Source Code Pro ExtraLight';
+  src: local("Source Code Pro ExtraLight");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/SourceCodePro-ExtraLight.eot");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/SourceCodePro-ExtraLight.otf") format("opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/SourceCodePro-ExtraLight.woff") format("woff");
+  font-style: normal;
+  font-weight: 200; }
+* {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box; }
+
+body {
+  font-family: Source Serif Pro;
+  font-weight: 100;
+  font-size: 0;
+  margin: 0; }
+
+h2 {
+  font-size: 2rem;
+  color: #000;
+  text-align: center;
+  line-height: 2; }
+
+.colors {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  color: black;
+  margin: 4rem 0; }
+
+.colors > div {
+  font-size: 1.8rem;
+  padding: .8em;
+  text-align: center;
+  font-weight: 100;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 12rem; }
+
+.colors span {
+  display: block;
+  font-family: Source Code Pro;
+  font-size: 1.2rem;
+  margin-top: .4rem; }
+
+.whitetext {
+  color: #fffefc; }
+
+.blacktext {
+  color: #111111; }
+
+.white {
+  background: #fffefc; }
+
+.pearl {
+  background: #fbfcf7; }
+
+.alabaster {
+  background: #fefaf0; }
+
+.snow {
+  background: #f4fefd; }
+
+.ivory {
+  background: #fef7e5; }
+
+.cream {
+  background: #fffbda; }
+
+.eggshell {
+  background: #fef9e3; }
+
+.cotton {
+  background: #fbfcf7; }
+
+.chiffon {
+  background: #fafaf1; }
+
+.salt {
+  background: #f8efec; }
+
+.lace {
+  background: #faf3ea; }
+
+.coconut {
+  background: #fff1e6; }
+
+.linen {
+  background: #f2ebd3; }
+
+.bone {
+  background: #e7dfcc; }
+
+.porcelain {
+  background: #fffffc; }
+
+.parchment {
+  background: #fcf6df; }
+
+.rice {
+  background: #fbf6ef; }
+
+.blue {
+  background: #0074d9; }
+
+.navy {
+  background: #001f3f; }
+
+.aqua {
+  background: #7fdbff; }
+
+.sky {
+  background: #00b2ff; }
+
+.teal {
+  background: #39cccc; }
+
+.slate {
+  background: #757b87; }
+
+.indigo {
+  background: #281e5d; }
+
+.cobalt {
+  background: #1438bd; }
+
+.ocean {
+  background: #026063; }
+
+.peacock {
+  background: #002d37; }
+
+.azure {
+  background: #1621a6; }
+
+.cerulean {
+  background: #0592c2; }
+
+.lapis {
+  background: #2632c2; }
+
+.spruce {
+  background: #2c3e4b; }
+
+.stone {
+  background: #59788d; }
+
+.aegean {
+  background: #1e456e; }
+
+.berry {
+  background: #24146f; }
+
+.denim {
+  background: #141e3c; }
+
+.admiral {
+  background: #061094; }
+
+.sapphire {
+  background: #52b2c0; }
+
+.arctic {
+  background: #82edfd; }
+
+.tan {
+  background: #e5dbac; }
+
+.beige {
+  background: #ecdc99; }
+
+.macaroon {
+  background: #f7df75; }
+
+.hazelwood {
+  background: #c9bc8e; }
+
+.granola {
+  background: #d6b75a; }
+
+.oat {
+  background: #dec98a; }
+
+.eggnog {
+  background: #fbe29d; }
+
+.fawn {
+  background: #c7a951; }
+
+.sugarcookie {
+  background: #f3ebad; }
+
+.sand {
+  background: #d7b963; }
+
+.sepia {
+  background: #e3b678; }
+
+.latte {
+  background: #e9c17b; }
+
+.oyster {
+  background: #dcd69f; }
+
+.biscotti {
+  background: #e3c565; }
+
+.parmesean {
+  background: #fee993; }
+
+.hazelnut {
+  background: #bda55d; }
+
+.sandcastle {
+  background: #dbc27d; }
+
+.buttermilk {
+  background: #fdefb2; }
+
+.sanddollar {
+  background: #ebe7b9; }
+
+.shortbread {
+  background: #fce791; }
+
+.yellow {
+  background: #ffdc00; }
+
+.canary {
+  background: #fac801; }
+
+.gold {
+  background: #f9a602; }
+
+.daffodil {
+  background: #feee88; }
+
+.flaxen {
+  background: #d5b65a; }
+
+.butter {
+  background: #fee226; }
+
+.lemon {
+  background: #effd5f; }
+
+.mustard {
+  background: #e9b829; }
+
+.corn {
+  background: #e4cd04; }
+
+.medallion {
+  background: #e4b103; }
+
+.dandelion {
+  background: #fdce2a; }
+
+.bumblebee {
+  background: #fce206; }
+
+.banana {
+  background: #fcf4a3; }
+
+.butterscotch {
+  background: #fabd04; }
+
+.dijon {
+  background: #c29200; }
+
+.honey {
+  background: #ec9707; }
+
+.blonde {
+  background: #fdeb75; }
+
+.pineapple {
+  background: #ffe327; }
+
+.tuscansun {
+  background: #fcd12a; }
+
+.orange {
+  background: #ff851b; }
+
+.tangerine {
+  background: #f98228; }
+
+.merigold {
+  background: #fdae1d; }
+
+.cider {
+  background: #b66827; }
+
+.rust {
+  background: #8c4005; }
+
+.ginger {
+  background: #bc5703; }
+
+.tiger {
+  background: #fb6b02; }
+
+.bronze {
+  background: #b2560c; }
+
+.cantaloupe {
+  background: #fca172; }
+
+.apricot {
+  background: #ed810f; }
+
+.carrot {
+  background: #ed7116; }
+
+.squash {
+  background: #c95c09; }
+
+.spice {
+  background: #7a3a03; }
+
+.marmalade {
+  background: #d16102; }
+
+.amber {
+  background: #893201; }
+
+.sandstone {
+  background: #d57128; }
+
+.yam {
+  background: #cc5801; }
+
+.red {
+  background: #ff4136; }
+
+.cherry {
+  background: #9a0f02; }
+
+.rose {
+  background: #e2252a; }
+
+.jam {
+  background: #600f0b; }
+
+.merlot {
+  background: #541f1b; }
+
+.garnet {
+  background: #5f0a04; }
+
+.crimson {
+  background: #b8100a; }
+
+.ruby {
+  background: #900503; }
+
+.scarlet {
+  background: #910d08; }
+
+.redwine {
+  background: #4c0805; }
+
+.redapple {
+  background: #a91b0d; }
+
+.mahogany {
+  background: #420d09; }
+
+.blood {
+  background: #710c04; }
+
+.sangria {
+  background: #5f1914; }
+
+.currant {
+  background: #670c07; }
+
+.blush {
+  background: #bb544a; }
+
+.candy {
+  background: #d31603; }
+
+.lipstick {
+  background: #9b0f02; }
+
+.pink {
+  background: #f69acd; }
+
+.fuchsia {
+  background: #f012be; }
+
+.punch {
+  background: #f25278; }
+
+.watermelon {
+  background: #fe809c; }
+
+.flamingo {
+  background: #fda4b8; }
+
+.rouge {
+  background: #f26c8c; }
+
+.salmon {
+  background: #fdab9f; }
+
+.coral {
+  background: #fe7d67; }
+
+.peach {
+  background: #fb9483; }
+
+.strawberry {
+  background: #fc4c4e; }
+
+.rosewood {
+  background: #a04242; }
+
+.lemonade {
+  background: #fabacb; }
+
+.taffy {
+  background: #fa85c4; }
+
+.bubblegum {
+  background: #fd5ca8; }
+
+.balletslipper {
+  background: #f69abf; }
+
+.crepe {
+  background: #f1b7c6; }
+
+.maroon {
+  background: #85144b; }
+
+.hotpink {
+  background: #ff1696; }
+
+.purple {
+  background: #b10dc9; }
+
+.mauve {
+  background: #7a4a89; }
+
+.violet {
+  background: #710193; }
+
+.boysenberry {
+  background: #630536; }
+
+.lavender {
+  background: #e3a0f6; }
+
+.plum {
+  background: #601a36; }
+
+.lilac {
+  background: #b65fcd; }
+
+.periwinkle {
+  background: #be93d4; }
+
+.eggplant {
+  background: #311431; }
+
+.iris {
+  background: #9866c5; }
+
+.heather {
+  background: #9b7cb9; }
+
+.amethyst {
+  background: #a45de4; }
+
+.raisin {
+  background: #290916; }
+
+.orchid {
+  background: #af69ee; }
+
+.mulberry {
+  background: #4d0220; }
+
+.green {
+  background: #2ecc40; }
+
+.chartreuse {
+  background: #b0fd38; }
+
+.juniper {
+  background: #395311; }
+
+.sage {
+  background: #728c69; }
+
+.lime {
+  background: #01ff70; }
+
+.fern {
+  background: #5dbc64; }
+
+.olive {
+  background: #98bf64; }
+
+.emerald {
+  background: #038911; }
+
+.pear {
+  background: #74b62d; }
+
+.moss {
+  background: #476d1e; }
+
+.shamrock {
+  background: #03ac13; }
+
+.seafoam {
+  background: #3cec96; }
+
+.pine {
+  background: #24501e; }
+
+.parakeet {
+  background: #02c04a; }
+
+.mint {
+  background: #98ecc3; }
+
+.seaweed {
+  background: #354b21; }
+
+.pickle {
+  background: #5a7d36; }
+
+.pistachio {
+  background: #b2d3c1; }
+
+.basil {
+  background: #32622d; }
+
+.crocodile {
+  background: #5f7c3a; }
+
+.brown {
+  background: #241709; }
+
+.coffee {
+  background: #4b371c; }
+
+.mocha {
+  background: #3c290d; }
+
+.peanut {
+  background: #795c34; }
+
+.carob {
+  background: #35260f; }
+
+.hickory {
+  background: #371d10; }
+
+.pecan {
+  background: #4a2512; }
+
+.walnut {
+  background: #432711; }
+
+.caramel {
+  background: #66360f; }
+
+.gingerbread {
+  background: #5d2c04; }
+
+.chocolate {
+  background: #2c1603; }
+
+.tortilla {
+  background: #9a7b4f; }
+
+.umber {
+  background: #352415; }
+
+.tawny {
+  background: #7e491d; }
+
+.brunette {
+  background: #391e07; }
+
+.cinammon {
+  background: #642b0d; }
+
+.penny {
+  background: #522915; }
+
+.grey {
+  background: #aaaaaa; }
+
+.shadow {
+  background: #373737; }
+
+.graphite {
+  background: #584d5b; }
+
+.iron {
+  background: #332d31; }
+
+.pewter {
+  background: #6a6880; }
+
+.cloud {
+  background: #c5c5d0; }
+
+.silver {
+  background: #dddddd; }
+
+.smoke {
+  background: #59515f; }
+
+.anchor {
+  background: #42424c; }
+
+.ash {
+  background: #554c4d; }
+
+.porpoise {
+  background: #4d4c5c; }
+
+.dove {
+  background: #7c6e7f; }
+
+.fog {
+  background: #655965; }
+
+.flint {
+  background: #7d7c9c; }
+
+.pebble {
+  background: #333333; }
+
+.lead {
+  background: #403f4e; }
+
+.coin {
+  background: #9897a9; }
+
+.fossil {
+  background: #787276; }
+
+.black {
+  background: #111111; }
+
+.ebony {
+  background: #080401; }
+
+.crow {
+  background: #25221F; }
+
+.charcoal {
+  background: #222023; }

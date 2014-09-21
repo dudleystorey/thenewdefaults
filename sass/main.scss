@@ -1,0 +1,61 @@
+@import 'maps/_color-map.scss';
+@import 'functions/_color-generator.scss';
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  src: local('SourceSerifPro-Regular');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/SourceSerifPro-Regular.eot');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/SourceSerifPro-Regular.otf') format('opentype'), 
+  url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/SourceSerifPro-Regular.woff') format('woff');     
+  font-style:   normal;
+  font-weight:  400;
+}
+@font-face {
+  font-family: 'Source Code Pro ExtraLight';
+  src: local('Source Code Pro ExtraLight');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/SourceCodePro-ExtraLight.eot');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/SourceCodePro-ExtraLight.otf') format('opentype'), 
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/SourceCodePro-ExtraLight.woff') format('woff');
+  font-style: normal;
+  font-weight: 200;
+}
+
+* { box-sizing: border-box; }
+body { 
+  font-family: Source Serif Pro;
+  font-weight: 100;
+  font-size: 0;
+  margin: 0; 
+}
+
+h2 { font-size: 2rem; color: #000; text-align: center; line-height: 2;}
+.colors { 
+  display: flex; 
+  flex-flow: row wrap;
+  color: black;
+  margin: 4rem 0;
+}
+.colors > div { 
+  font-size: 1.8rem;
+  padding: .8em;
+  text-align: center;
+  font-weight: 100;
+  flex: 1;
+  min-width: 12rem;
+}
+
+.colors span { 
+  display: block;
+  font-family: Source Code Pro;
+  font-size: 1.2rem;
+  margin-top: .4rem; 
+}
+.whitetext { color: color(white); }
+.blacktext { color: color(black); }
+
+@each $color, $value in $colors {
+  .#{"" + $color} {
+    background: $value;
+  }
+}
+
