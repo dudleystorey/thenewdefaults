@@ -8,8 +8,8 @@ To use
 
 Include `_color-map.scss` and `_color-generator.scss` in your project:
 
-  `@import 'maps/_color-map.scss';`
-  `@import 'functions/_color-generator.scss';`
+`@import 'maps/_color-map.scss';`
+`@import 'functions/_color-generator.scss';`
 
 Use any of the named colors in your Sass:
 
