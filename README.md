@@ -8,11 +8,15 @@ To use
 
 Include `_color-map.scss` and `_color-generator.scss` in your project:
 
-`@import 'maps/_color-map.scss';`
-`@import 'functions/_color-generator.scss';`
+```
+@import 'maps/_color-map.scss';`
+`@import 'functions/_color-generator.scss';
+```
 
 Use any of the named colors in your Sass:
 
-`body { background: color(sky); }`
+```CSS
+body { background: color(sky); }
+```
 
 A complete visual guide to The New Defaults eill be available on Github Pages.
