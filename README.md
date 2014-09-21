@@ -19,4 +19,4 @@ Use any of the named colors in your Sass:
 body { background: color(sky); }
 ```
 
-A complete visual guide to The New Defaults eill be available on Github Pages.
+A complete visual guide to The New Defaults is available on [Github Pages](http://dudleystorey.github.io/thenewdefaults/).
