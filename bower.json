@@ -1,0 +1,28 @@
+{
+  "name": "SASS Color Thesaurus",
+  "version": "1.0",
+  "homepage": "https://github.com/dudleystorey/thenewdefaults/",
+  "authors": [
+    "Dudley Storey"
+  ],
+  "description": "A Sass replacement for the standard CSS named color system. Provides more visually appealing hues for many CSS keywords; adds new colors with more relevant and easily remembered names.",
+  "main": "sass/main.scss",
+  "keywords": [
+    "color",
+    "map",
+    "hsl",
+    "hsla",
+    "css",
+    "hex",
+    "color",
+    "sass"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
